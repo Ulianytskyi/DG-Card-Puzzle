@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 0px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border: 1px solid #ccc;
+    cursor: grab;
+}
+
+.card[data-pattern="pattern1"] {
+    background-image: url('pattern1.png');
+}
+
+.card[data-pattern="pattern2"] {
+    background-image: url('pattern2.png');
+}
+
+.card[data-pattern="pattern3"] {
+    background-image: url('pattern3.png');
+}
+
+.card[data-pattern="pattern4"] {
+    background-image: url('pattern4.png');
+}
+
+.card[data-pattern="pattern5"] {
+    background-image: url('pattern5.png');
+}
+
+.card[data-pattern="pattern6"] {
+    background-image: url('pattern6.png');
+}
+
+.card[data-pattern="pattern7"] {
+    background-image: url('pattern7.png');
+}
+
+.card[data-pattern="pattern8"] {
+    background-image: url('pattern8.png');
+}
+
+.card[data-pattern="pattern9"] {
+    background-image: url('pattern9.png');
+}
+

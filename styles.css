@@ -1,61 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    font-family: 'Gabarito', sans-serif;
+    overflow: hidden;
+    touch-action: none;
 }
 
-.game-board {
+#info-field {
+    position: absolute;
+    top: 10%;
+}
+
+#touch-field {
+    position: absolute;
+    top: 15%;
+}
+
+.game-container {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    grid-gap: 0px;
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
 }
 
 .card {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 60px;
+    
     width: 100px;
     height: 100px;
-    background-size: cover;
+    background-color: ghostwhite;
     border: 1px solid #ccc;
-    cursor: grab;
+    /* cursor: url('cur_grab1.png'), grab; */
 }
 
-.card[data-pattern="pattern1"] {
-    background-image: url('pattern1.png');
-}
-
-.card[data-pattern="pattern2"] {
-    background-image: url('pattern2.png');
-}
-
-.card[data-pattern="pattern3"] {
-    background-image: url('pattern3.png');
-}
-
-.card[data-pattern="pattern4"] {
-    background-image: url('pattern4.png');
-}
-
-.card[data-pattern="pattern5"] {
-    background-image: url('pattern5.png');
-}
-
-.card[data-pattern="pattern6"] {
-    background-image: url('pattern6.png');
-}
-
-.card[data-pattern="pattern7"] {
-    background-image: url('pattern7.png');
-}
-
-.card[data-pattern="pattern8"] {
-    background-image: url('pattern8.png');
-}
-
-.card[data-pattern="pattern9"] {
-    background-image: url('pattern9.png');
+.card:active {
+    cursor: url('cur_grab2.png'), grab;
+    background-color: papayawhip;
 }
 
